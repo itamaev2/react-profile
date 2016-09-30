@@ -8,7 +8,8 @@ import ContentStat from './ContentStatus';
 export default class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {content: ContentStat};
+    this.state = {content: ContentStat.AboutMe};
+    this.handleOnContentsChange = this.handleOnContentsChange.bind(this);
   }
 
   handleOnContentsChange(stat) {
@@ -20,7 +21,7 @@ export default class App extends React.Component {
       <MuiThemeProvider>
         <div className="App">
           <Header onContentsChange={this.handleOnContentsChange} />
-          <Contents content={ContentStat.AboutMe}/>
+          <Contents content={this.state.content} />
         </div>
       </MuiThemeProvider>
     );

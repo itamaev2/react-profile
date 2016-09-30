@@ -1,5 +1,6 @@
 import React from 'react';
 import AboutMe from './AboutMe';
+import Contact from './Contact';
 import content_stat from './ContentStatus';
 
 export default class Contents extends React.Component {
