@@ -1,6 +1,6 @@
 import React from 'react';
 import AboutMe from './AboutMe';
-import Contact from './Contact';
+import Status from './Status';
 import content_stat from './ContentStatus';
 
 export default class Contents extends React.Component {
@@ -8,8 +8,8 @@ export default class Contents extends React.Component {
     var content = <AboutMe />
     if (this.props.content === content_stat.AboutMe) {
       content = <AboutMe />;
-    } else if (this.props.content === content_stat.Contact) {
-      content = <Contact />;
+    } else if (this.props.content === content_stat.Status) {
+      content = <Status />;
     } else {
       content = <AboutMe />;
     }

@@ -7,7 +7,7 @@ export default class Header extends React.Component {
     return (
       <div className="header">
         <FlatButton label="About me" onClick={ () => this.props.onContentsChange(ContentStat.AboutMe) } />
-        <FlatButton label="Contact" onClick={ () => this.props.onContentsChange(ContentStat.Contact) } />
+        <FlatButton label="Status" onClick={ () => this.props.onContentsChange(ContentStat.Status) } />
       </div>
     );
   }

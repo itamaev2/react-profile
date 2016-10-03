@@ -1,6 +1,6 @@
 const content = {
   AboutMe: Symbol(),
-  Contact: Symbol()
+  Status: Symbol()
 };
 
 export default content;
