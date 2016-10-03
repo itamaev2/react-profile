@@ -4,6 +4,7 @@ import Header from './Header';
 import Contents from './Contents';
 import './App.css';
 import ContentStat from './ContentStatus';
+import 'font-awesome/css/font-awesome.css';
 
 export default class App extends React.Component {
   constructor(props) {

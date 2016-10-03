@@ -6,6 +6,17 @@ export default class AboutMe extends React.Component {
   constructor(props) {
     super(props);
     this.state = { name: '', comment: '' };
+    this.createSocialLink = this.createSocialLink.bind(this);
+  }
+
+  createSocialLink(data) {
+    if (!data ) {
+      return ;
+    } 
+    return data.map( (social) => {
+        return (<IconButton key={social.name} iconClassName={social.icon} href={social.url} target="_blank" />);
+      }
+    );
   }
 
   componentWillMount() {
@@ -31,7 +42,7 @@ export default class AboutMe extends React.Component {
             {this.state.comment}
           </CardText>
           <CardActions>
-            <IconButton iconClassName="muidocs-icon-custom-github" />
+            {this.createSocialLink(this.state.social)}
           </CardActions>
         </Card>
       </div>
