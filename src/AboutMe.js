@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardTitle, CardText, CardActions, IconButton } from 'material-ui';
+import { Avatar, Card, CardTitle, CardText, CardActions, IconButton } from 'material-ui';
 import $ from 'jquery';
 
 export default class AboutMe extends React.Component {
@@ -37,6 +37,7 @@ export default class AboutMe extends React.Component {
     return (
       <div className="abount_me">
         <Card style={style}>
+          <Avatar src="image/itamaev2_icon.jpg" size={90} />
           <CardTitle title={this.state.name} />
           <CardText>
             {this.state.comment}
