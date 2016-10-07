@@ -1,5 +1,5 @@
 import React from 'react';
-import { Avatar, Card, CardTitle, CardText, CardActions, IconButton } from 'material-ui';
+import { Avatar, Card, CardHeader, CardTitle, CardText, CardActions, IconButton } from 'material-ui';
 import $ from 'jquery';
 
 export default class AboutMe extends React.Component {
@@ -27,17 +27,25 @@ export default class AboutMe extends React.Component {
 
   render() {
     const style = {
-      height: 500,
-      width: 500,
-      margin: 20,
-      textAlign: 'center',
-      display: 'inline-block'
+      card: {
+        height: 500,
+        width: 500,
+        margin: 20,
+        textAlign: 'center',
+        display: 'inline-block'
+      },
+      avatar: {
+        display: 'block',
+        margin: '0 auto'
+      }
     };
 
     return (
       <div className="abount_me">
-        <Card style={style}>
-          <Avatar src="image/itamaev2_icon.jpg" size={90} />
+        <Card style={style.card}>
+          <CardHeader>
+            <Avatar src="image/itamaev2_icon.jpg" size={90} style={style.avatar} />
+          </CardHeader>
           <CardTitle title={this.state.name} />
           <CardText>
             {this.state.comment}
