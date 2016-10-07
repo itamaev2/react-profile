@@ -13,9 +13,14 @@ export default class AboutMe extends React.Component {
     if (!data ) {
       return ;
     } 
-    return data.map( (social) => {
-        return (<IconButton key={social.name} iconClassName={social.icon} href={social.url} target="_blank" />);
-      }
+    return data.map( (social) => (
+        <IconButton 
+          key={social.name}
+          iconClassName={social.icon} 
+          href={social.url} 
+          target="_blank" 
+          iconStyle={{display: 'block', margin: '0 auto', fontSize: '50px'}} />
+      )
     );
   }
 
