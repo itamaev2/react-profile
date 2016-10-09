@@ -13,13 +13,31 @@ export default class AboutMe extends React.Component {
     if (!data ) {
       return ;
     } 
+
+    const style = {
+      iconButton: {
+        padding:     '0px'
+      },
+      icon: {
+        textAlign:     'center',
+        verticalAlign: 'bottom',
+        position:      'absolute',
+        top:         '0px',
+        left:        '0px',
+        fontSize:   '30px',
+        width:      '48px',
+        height:     '48px',
+        lineHeight: '51px'
+      }
+    };
+
     return data.map( (social) => (
         <IconButton 
           key={social.name}
           iconClassName={social.icon} 
           href={social.url} 
           target="_blank" 
-          iconStyle={{display: 'block', margin: '0 auto', fontSize: '50px'}} />
+          iconStyle={style.icon} />
       )
     );
   }
@@ -33,15 +51,15 @@ export default class AboutMe extends React.Component {
   render() {
     const style = {
       card: {
-        height: 500,
-        width: 500,
-        margin: 20,
+        height: '500px',
+        width:  '500px',
+        margin:  '20px',
         textAlign: 'center',
         display: 'inline-block'
       },
       avatar: {
         display: 'block',
-        margin: '0 auto'
+        margin:  '0 auto'
       }
     };
 

@@ -42,9 +42,8 @@ export default class Status extends React.Component {
     return (
       <div className="status">
         <Card style={style}>
-          <CardTitle title="Status です。" />
+          <CardTitle title="Skills" />
           <CardText>
-            Status の説明です。
           </CardText>
           <Table>
             <TableHeader displaySelectAll={false}>
