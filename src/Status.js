@@ -33,7 +33,7 @@ export default class Status extends React.Component {
   render() {
     const style = {
       height: 500,
-      width: 500,
+      width: 450,
       margin: 20,
       textAlign: 'center',
       display: 'inline-block'
