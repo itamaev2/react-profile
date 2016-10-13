@@ -21,7 +21,7 @@ export default class App extends React.Component {
     return (
       <MuiThemeProvider>
         <div className="App">
-          <Header onContentsChange={this.handleOnContentsChange} />
+          <Header onContentsChange={this.handleOnContentsChange} content={this.state.content}/>
           <Contents content={this.state.content} />
         </div>
       </MuiThemeProvider>
