@@ -52,10 +52,9 @@ export default class AboutMe extends React.Component {
     const style = {
       card: {
         height: '500px',
-        width:  '450px',
-        margin:  '20px',
+        maxWidth:  '450px',
+        margin:  '20px auto',
         textAlign: 'center',
-        display: 'inline-block'
       },
       avatar: {
         display: 'block',
