@@ -1,5 +1,6 @@
 {
   "name": "react-profile",
+  "homepage": "https://itamaev2.github.io/react-profile",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
